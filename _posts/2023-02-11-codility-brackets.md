@@ -14,3 +14,5 @@ Determine whether a given string of parentheses (multiple types) is properly nes
 ### 문제 해석
 
 ### CODE
+
+<script src="https://gist.github.com/lyaesley/0b24a80cc22a1214005d1d6793d6b887.js"></script>
