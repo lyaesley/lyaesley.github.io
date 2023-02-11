@@ -1,10 +1,11 @@
 ---
-title:  "Welcome to JUNYOUNG'S BLOG!"
-categories: [JAVA]
-tags: [hot]
+title:  "[Codility] Lesson7(Stacks and Queues) Brackets"
+categories: [Algorithm]
+tags: [codility]
 ---
 
-# Welcome
+# [Brackets](https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/)
+
 
 **Hello world**, this is my first Jekyll blog post.
 
