@@ -1,11 +1,8 @@
 ---
-title:  "[Codility] Lesson7(Stacks and Queues) Brackets"
-categories: [Algorithm]
-tags: [codility]
+title: "WELCOME"
 ---
 
-# [Brackets](https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/)
-
+# WELCOME
 
 **Hello world**, this is my first Jekyll blog post.
 
