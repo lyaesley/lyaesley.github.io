@@ -15,10 +15,10 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "시작하자"
+locale                   : "ko-KR"
+title                    : "JUNYOUNG is coding"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "version 1.0" # site tagline that appears below site title in masthead
 name                     : "JUNYOUNG LEE"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
