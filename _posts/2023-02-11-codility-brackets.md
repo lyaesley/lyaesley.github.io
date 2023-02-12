@@ -31,3 +31,5 @@ Determine whether a given string of parentheses (multiple types) is properly nes
 ### CODE V2
 결과는 동일하다
 <script src="https://gist.github.com/lyaesley/00fbb451dbc16d584527d765b57b1822.js"></script>
+
+-[https://app.codility.com/demo/results/trainingFVHDFV-WQM/](https://app.codility.com/demo/results/trainingFVHDFV-WQM/)
