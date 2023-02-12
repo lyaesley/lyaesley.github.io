@@ -322,3 +322,12 @@ figure.highlight {
     border-bottom: 0;
   }
 }
+
+/* https://github.com/lonekorean/gist-syntax-themes */
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  margin: 20px;
+  font: 16px 'Open Sans', sans-serif;
+}
