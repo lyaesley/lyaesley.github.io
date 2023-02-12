@@ -33,5 +33,6 @@ toc: true
 
 <script src="https://gist.github.com/lyaesley/00fbb451dbc16d584527d765b57b1822.js"></script>
 
+
 - 결과는 동일하다
 - [https://app.codility.com/demo/results/trainingFVHDFV-WQM/](https://app.codility.com/demo/results/trainingFVHDFV-WQM/)
