@@ -9,10 +9,11 @@ toc: true
 
 ### 문제
 
-Determine whether a given string of parentheses (multiple types) is properly nested.
-효율적인 알고리즘 작성
+- Determine whether a given string of parentheses (multiple types) is properly nested.
+- 효율적인 알고리즘 작성
 
 ### 문제 풀이
+
 - Stack 사용
 - ASCII CODE 사용 () 40/41, [] 91/93, {} 123/125
 
@@ -29,5 +30,8 @@ Determine whether a given string of parentheses (multiple types) is properly nes
 - [https://app.codility.com/demo/results/trainingTA9HB6-TKQ/](https://app.codility.com/demo/results/trainingTA9HB6-TKQ/)
 
 ### CODE V2
-결과는 동일하다
+
 <script src="https://gist.github.com/lyaesley/00fbb451dbc16d584527d765b57b1822.js"></script>
+
+- 결과는 동일하다
+- [https://app.codility.com/demo/results/trainingFVHDFV-WQM/](https://app.codility.com/demo/results/trainingFVHDFV-WQM/)
