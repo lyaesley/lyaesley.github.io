@@ -3,6 +3,7 @@ title: "[Codility] Lesson7(Stacks and Queues) Brackets"
 category: [Algorithm]
 tag: [codility]
 toc: true
+toc_sticky: true
 ---
 
 # [Brackets](https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/)

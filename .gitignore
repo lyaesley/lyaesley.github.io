@@ -27,3 +27,10 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+#intellij
+.idea/.gitignore
+.idea/lyaesley.github.io.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
