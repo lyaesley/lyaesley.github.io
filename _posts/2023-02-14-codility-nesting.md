@@ -16,7 +16,6 @@ toc_sticky: true
 ### 문제 풀이
 
 - Stack 사용
-- 효율적인 알고리즘 작성
 - Brackets 문제와 동일하다
 
 ### CODE
