@@ -45,6 +45,7 @@ published: true
         try( resource ) {} 를 이용하여 () 내에 선언된 변수들이 자동으로 close()
         될 수 있는 구조로 작성함
         try() 내에 선언도니 변수들은 모두 AutoCloseable 라는 인테페이스를 구현한 타입
+
 ### Connection Pool
     - Connection Pool
         DB와의 연결을 맺는 작업은 시관과 자원을 쓰기때문에 성능저하가 발생
