@@ -6,8 +6,6 @@ toc: true
 toc_sticky: true
 published: true
 ---
-작성중...
-
 # NOTE
 
 처음 자바 공부를 할 때 JDBC, 드라이버 세팅, 커넥션풀, preparedStatement 에 대해 공부한 기억이 있다. 
