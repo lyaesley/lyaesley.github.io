@@ -8,9 +8,7 @@ published: true
 ---
 작성중...
 
-# JUnit 테스트
-
-### @ExtendWith(SpringExtension.class)  
+## JUnit 테스트
 
 ```java
 
