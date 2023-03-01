@@ -61,9 +61,29 @@ published: true
 
 ## 4.3 스프링 Web MVC 기초
 
+스프링 MVC가 기존 구조에 약간의 변화를 주는 부분
+- Front-Controller 패턴을 이용해서 모든 흐름의 사전/사후 처리를 가능하도록 설계된 점
+- 어노테이션을 적극적으로 활용해서 최소한의 코드로 많은 처리가 가능하도록 설계된 점
+- HttpServletRequest/HttpServletResponse를 이용하지 않아도 될 만큼 추상화된 방식으로 개발 가능
+
+> 스프링 MVC 에서 가장 중요한 사실은 모든 요청(Request)이 반드시 DispatcherServlet 이라는 존재를 통해서 실행된다
+
+- 3 tier 구조를 분리하듯 별도의 설정파일로 구성 (servlet-context.xml)
+
+
+
 ### DispatcherServlet 과 Front Controller
 
+- 스프링 MVC 에서는 DispatcherServlet 이라는 객체가 프론트 컨트롤러의 역할을 수행한다.
+
 ### 파라미터 자동 수집과 변환
+
+### Formatter를 이용한 파라미터의 커스텀 처리
+
+- 기본적으로 HTTP는 문자열로 데이터를 전달함
+- 컨트롤러는 문자열을 기준으로 특정한 클래스의 객체로 처리하는 작업이 진행됨
+- 가장 문제가 되는 타입이 날짜 관련 타입
+- Formatter 인터페이스를 구현 parse(), print() 메소드 존재
 
 ### 스프링 MVC에서 주로 사용하는 어노테이션들
 
