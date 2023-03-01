@@ -17,7 +17,7 @@ published: true
 @ExtendWith(SpringExtension.class)  
 //스프링의 설정 정보를 로딩하기 위해 사용
 //xml로 설정했기 때문에 locations 설정을 이용, 자바 설정은 classes 속성 이용
-@ContextConfiguration(locations = "file:src/main/webapp/WEB-INF/root-context.xml")
+@ContextConfiguration(locations = "file:src/main/webapp/WEB-INF/root-context.xml") 
 public class SampleTests {
 
     @Autowired
