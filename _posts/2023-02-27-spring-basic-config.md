@@ -13,6 +13,7 @@ published: true
 ### root-context.xml 파일
 
 - 스프링의 빈 들을 어떻게 관리할 것인지를 설정하는 파일
+
 ```xml
     <!-- 해당 패키지를 스캔해서 스프링의 어노테이션들을 인식 -->
     <context:component-scan base-package="com.lyae.workbook.springex.sample"/>
@@ -25,7 +26,6 @@ published: true
 
     <!-- mybatis 메퍼 인터페이스를 설정했는지 작성 -->
     <mybatis:scan base-package="com.lyae.workbook.springex.mapper"></mybatis:scan>
-
 ```
 
 ### servlet-context.xml 파일
