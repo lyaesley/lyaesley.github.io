@@ -1,7 +1,7 @@
 ---
 title: "[java-web-workbook] 3장 세션/쿠키/필터/리스너"
 category: [Book]
-tag: [java-web-workbook, db]
+tag: [java-web-workbook, mvc]
 toc: true
 toc_sticky: true
 published: true
