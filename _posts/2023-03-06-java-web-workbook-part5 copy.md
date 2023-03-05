@@ -27,3 +27,7 @@ published: true
 
 - Spring Initializr 를 이용한 자동 생성 (주로 이용, IDE 에서 지원)
 - Maven 이나 Gradle 을 이용한 직접 생성
+
+### 스프링 부트에서 웹 개발
+
+- web.xml 이나 servlet-context.xml 과 같은 웹 관련 설정 파일들이 없기때문에 이를 대신하는 클래스를 작성한다
