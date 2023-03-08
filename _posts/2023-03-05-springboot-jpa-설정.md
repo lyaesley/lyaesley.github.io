@@ -35,3 +35,12 @@ spring.jpa.show-sql=true
 - spring.jpa.show-sql=true
     - JPA가 실행하는 SQL을 같이 출력
 
+### Entity
+
+- Entity 클래스는 반드시 @Entity를 적용하고 @Id 가 필요하다
+- @Id 키 생성 전략
+
+    - IDENTITY : 데이터베이스에 위임(MYSQL/MariaDB) - auto_increment
+    - SEQUENCE : 데이터베이스 시퀀스 오브젝트 사용(Oracle) - @SequenceGenerator 필요
+    - TABLE : 키 생성용 테이블 사용, 모든 DB에서 사용 - @TableGenerator 필요
+    - AUTO : 방언에 따라 자동 지정, 기본값
