@@ -1,6 +1,6 @@
 ---
 title: "Spring Data JPA 설정"
-category: [Spring boot]
+category: [Springboot]
 tag: [jpa, db, spring boot]
 toc: true
 toc_sticky: true
