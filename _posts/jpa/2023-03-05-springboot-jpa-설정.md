@@ -8,6 +8,8 @@ published: true
 ---
 작성중...
 
+# Spring Data JPA 설정
+
 ## Spring Data JPA 를 위한 설정
 
 ### application.properties 설정 
