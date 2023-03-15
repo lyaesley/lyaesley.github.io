@@ -48,7 +48,8 @@ published: true
 - Java Beans 와 @ModelAttribute
     - 스프링 MVC의 컨트롤러는 파라미터로 getter/setter를 이용하는 **Java Beans**의 형식의 사용자 정의 클래스가 파라미터인 경우 **자동으로 화면까지 객체를 전달**
     ```java
-    // 별도의 처리 없이 ${todoDTO}를 사용 가능
+    // 별도의 처리(model.addAttribute('todoDTO', todoDTO)) 하지 않아도
+    // View 에서 ${todoDTO}를 사용 가능.
     // 특정한 이름을 사용하려면 ModelAttribute로 변수명 지정
     @GetMapping("/ex4_1")
     public void ex4Extra(@ModelAttribute("dto") TodoDTO todoDTO, Model model) {
@@ -94,7 +95,7 @@ published: true
 - 메소드의 파라미터에 사용하는 어노테이션
     - @RequestParam : Request에 있는 특정한 이름의 데이터를 파라미터로 받아서 처리하는 경우 사용
     - @PathVariable : URL 경로의 일부를 변수로 삼아서 처리하기 위해서 사용
-    - `@ModelAttribute` : 해당 파라미터는 반드시 Model에 포함되어서 다시 뷰(View)로 전달됨을 명시(주로 기본 자료형이나 Wrapper 클래스, 문자열에 사용)
+    - **@ModelAttribute** : 해당 파라미터는 반드시 Model에 포함되어서 다시 뷰(View)로 전달됨을 명시(주로 기본 자료형이나 Wrapper 클래스, 문자열에 사용)
     - 기타 : @SessionAttribute, @Valid, @RequestBody 등
 
 ### 스프링 MVC의 예외 처리
