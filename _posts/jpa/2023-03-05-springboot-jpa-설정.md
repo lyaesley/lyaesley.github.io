@@ -27,7 +27,7 @@ spring.jpa.show-sql=true
     |    create-drop    |   실행할 때 DDL을 실행하고 종료 시에 만들어진 테이블 등을 모두 삭제   |
     |    create         |   실행할 때마다 새롭게 테이블을 생성                                |
     |    update         |   기존과 다르게 변경된 부분이 있을 때는 새로 생성                    |
-    |    validate       |   변견된 부분만 알려주고 종료                                      |
+    |    validate       |   변경된 부분만 알려주고 종료                                      |
 
     - update : 테이블이 없을 때는 자동으로 생성하고 변경이 필요할 때는 alter table이 실행됨. 인덱스나 외래키 등도 자동 처리됨
 
