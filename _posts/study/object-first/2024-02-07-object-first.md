@@ -1,5 +1,5 @@
 ---
-title: "WELCOME"
+title: "객체지향의 사실과 오해"
 category: [study]
 tag: [object, book]
 toc: true
