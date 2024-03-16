@@ -17,4 +17,5 @@ published: false
 5. 암/복호화
 6. 날짜표기 GMT?
 7. http, https 
-
+8. input/output stream
+9. 쓰레드
