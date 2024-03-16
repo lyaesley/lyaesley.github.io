@@ -6,7 +6,8 @@ toc: true
 toc_sticky: true
 published: true
 ---
-## 쓰레드 thread
+# 쓰레드 thread
+
 출처 : 김영한 선생님의 스프링 강의
 [강의 링크](https://www.inflearn.com/course/lecture?courseSlug=%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1&unitId=71162)
 
@@ -17,7 +18,7 @@ published: true
 - 동시 처리가 필요하면 쓰레드를 추가로 생성
 
 
-## 요청 마다 쓰레드 생성
+### 요청 마다 쓰레드 생성
 
 장단점
 
