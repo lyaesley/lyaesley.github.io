@@ -1,5 +1,5 @@
 ---
-title: "Spring WebFlux에서 403 상태 처리와 API Key 갱신"
+title: "GitHub Actions를 활용한 CI/CD 파이프라인 구축과 최신 Docker 이미지 배포까지"
 category: [pipeline]
 tag: [github-action, GCP, docker]
 toc: true
