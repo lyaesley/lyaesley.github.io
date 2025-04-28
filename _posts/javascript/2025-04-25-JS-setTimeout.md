@@ -32,6 +32,30 @@ published: true
 
 이 구성 요소들이 어떻게 상호작용하는지 이해하는 것이 setTimeout(0)의 동작을 이해하는 핵심입니다.
 
+```mermaid
+sequenceDiagram
+    participant CS as 콜 스택
+    participant WA as Web API
+    participant MTQ as 매크로태스크 큐
+    participant MIQ as 마이크로태스크 큐
+    participant EL as 이벤트 루프
+
+    Note over CS,EL: setTimeout(fn, 0) 호출 시작
+    
+    CS->>WA: 1. setTimeout 함수 호출
+    WA-->>MTQ: 2. 콜백 함수를 매크로태스크 큐에 등록
+    CS->>CS: 3. 남은 동기 코드 실행
+    
+    EL->>MIQ: 4. 마이크로태스크 확인
+    MIQ-->>CS: 5. 마이크로태스크 있으면 실행
+    
+    EL->>MTQ: 6. 매크로태스크 확인
+    MTQ-->>CS: 7. setTimeout 콜백 실행
+    
+    Note over CS,EL: 렌더링 가능
+    
+    CS-->>CS: 8. 콜백 내부 코드 실행
+```
 ## setTimeout(0)의 실제 동작 방식
 
 `setTimeout(fn, 0)`이 호출되면 다음과 같은 일이 발생합니다:
