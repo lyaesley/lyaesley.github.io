@@ -29,50 +29,49 @@ published: true
 ### 별도의 스레드로 실행하기
 
 - 별도 스레드를 생성하거나 스프링이라면 @Async 애노테이션을 이용
-```java
-  new Thread(() -> pushClient.sendPush(pushData)).start();
-```
-```java
-  @Async
-  public void sendPushAsync(PushData pushData) {
-    pushClient.sendPush(pushData);
-    // ... 기타 코드
-  }
-```
+  ```java
+    new Thread(() -> pushClient.sendPush(pushData)).start();
+  ```
+  ```java
+    @Async
+    public void sendPushAsync(PushData pushData) {
+      pushClient.sendPush(pushData);
+      // ... 기타 코드
+    }
+  ```
 - @Async 를 사용할때는 메서드 이름에 비동기 관련된 단어를 추가하는 것이 좋다.
   - 비동기로 실행되면 (비동기를 호출하는 메서드에서) catch 블록이 실행되지 않는다.
-
-```java
-public OrderResult placeOrder(OrderRequest req) {
-  //주문 생성 처리
-  try {
-    pushService.sendPush(pushData); // 비동기 메서드
-  } catch(Exception ex) {
-    //sendPush()가 비동기로 실행되므로 catch 블록은 동작하지 않는다.
-    //에러 처리 코드
+  ```java
+  public OrderResult placeOrder(OrderRequest req) {
+    //주문 생성 처리
+    try {
+      pushService.sendPush(pushData); // 비동기 메서드
+    } catch(Exception ex) {
+      //sendPush()가 비동기로 실행되므로 catch 블록은 동작하지 않는다.
+      //에러 처리 코드
+    }
+    return successResult(...); // 푸시 발송을 기다리지 않고 리턴
   }
-  return successResult(...); // 푸시 발송을 기다리지 않고 리턴
-}
-```
+  ```
 - 비동기로 실행되는 코드는 연동 과정에서 발생하는 오류를 직접 처리해야 한다.
 
-```java
-@Async
-public void sendPushAsync(PushData pushData) {
-    try {
-      pushClient.sendPush(pushData);
-    } catch(Exception e) {
+  ```java
+  @Async
+  public void sendPushAsync(PushData pushData) {
       try {
-          Thread.sleep(500);
-      } catch(Exception ex) {}
-      try {
-        pushClient.sendPush(pushData); // 재시도를 하거나
-      } catch(Exception e1) {
-        // 실패 로그로 남기거나
+        pushClient.sendPush(pushData);
+      } catch(Exception e) {
+        try {
+            Thread.sleep(500);
+        } catch(Exception ex) {}
+        try {
+          pushClient.sendPush(pushData); // 재시도를 하거나
+        } catch(Exception e1) {
+          // 실패 로그로 남기거나
+        }
       }
-    }
-}
-```
+  }
+  ```
 
 
 ---
